@@ -45,7 +45,7 @@ CRCA <- function(direc, file, PAM='PAM38', und_cutoff = 0.15, mix_cutoff = 0.06)
   # performing correlation
   corr <- cor(data_m_med[m[w],], crc_m[w,])
   
-  # finding which subtype has maximum correlation
+  # finding which subtype has maximum correlation 
   corr_max_w <- apply(corr, 1, function(x) which.max(x))
   
   # Low confidence subtypes
